@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body {
+    margin-top: 10rem;
+    padding-right: 63.5%;
+    min-height: 100vh;
+    background: url(../Imagenes/527526.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+h2 {
+    margin-top: 5%;
+    font-size: 80px ;
+    text-align: center;
+    justify-content: center;
+    color: #85a258;
+    text-align: center;
+}
+
+
+h3 {
+    margin-left: 0rem;
+    padding-top: 20%;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-top: 5%;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 2%;
+}
+
+ul li {
+    padding-top: 1%;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: white;
+    font-size: 16px;
+}
+
+a:hover{
+    color: #85a258;
+}
+
+.wrapper{
+
+    margin-top: 5%;
+    margin-left: 7%;
+    width: 600px;
+    height: 100px;
+    background: transparent;
+    border: 2px solid #85a258;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.todo{
+    padding-top: -25%;
+}
+
+.ruta{
+    margin-top: -5%;
+    margin-left: 14%;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height:50px;
+    border-bottom: 2px solid #85a258;
+    margin: 30px 0;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #85a258;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #85a258;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+.input-box .icono{
+    position: absolute;
+    right: 8px;
+    font-size: 19.2px;
+    color: #85a258;
+    line-height: 57px;
+}
+
+p {
+    margin-top:-40px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.bo{
+    
+    margin-left: 14.3rem;
+    margin-top: 3rem;
+
+}
+.bo a {
+    display: inline-block;
+    background: #85a258;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.bo a:hover {
+    background: #6b8246;
+    color: white;
+}
+
+.bo1{
+    
+    margin-left: 12.7rem;
+    margin-top: 30rem;
+
+}
+.bo1 a {
+    display: inline-block;
+    background: #85a258;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.bo1 a:hover {
+    background: #6b8246;
+    color: white;
+}
+.bo2{
+    
+    margin-left: 12.7rem;
+    margin-top: 28rem;
+
+}
+.bo2 a {
+    display: inline-block;
+    background: #85a258;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.bo2 a:hover {
+    background: #6b8246;
+    color: white;
+}
