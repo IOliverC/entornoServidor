@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+body {
+    margin-top: 10rem;
+    padding-right: 63.5%;
+    min-height: 100vh;
+    background: url(../Imagenes/527526.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h2 {
+    margin-top: 5%;
+    font-size: 80px ;
+    text-align: center;
+    justify-content: center;
+    color: #85a258;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.bo{
+    margin-left: 14.3rem;
+    margin-top: 3rem;
+
+}
+.bo a {
+    display: inline-block;
+    background: #85a258;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.bo a:hover {
+    background: #6b8246;
+    color: white;
+}
+
+.bo1{
+    margin-left: 19.8rem;
+    margin-top: 23rem;
+
+}
+.bo1 a {
+    display: inline-block;
+    background: #85a258;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.bo1 a:hover {
+    background: #6b8246;
+    color: white;
+}
