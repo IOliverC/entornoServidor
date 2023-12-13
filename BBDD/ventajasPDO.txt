@@ -1,0 +1,11 @@
+PDO es una capa de acceso a la base de datos que proporciona una interfaz rápida y consistente para acceder y administrar bases de datos en aplicaciones PHP.  Básicamente, PDO define un interfaz ligera para poder acceder a bases de datos en PHP. 
+
+Las ventajas de PDO son las siguientes:
+
+    Portabilidad del Código: Facilita la migración de una base de datos a otra sin cambiar significativamente el código de la aplicación.
+    Soporte para Múltiples Bases de Datos: PDO soporta varios tipos de bases de datos, incluyendo MySQL, PostgreSQL, SQLite, SQL Server, y más. Esto hace que sea más fácil cambiar entre diferentes sistemas de gestión de bases de datos sin tener que reescribir completamente el código.
+    Seguridad: PDO utiliza sentencias preparadas y parámetros vinculados, lo que ayuda a prevenir ataques de inyección SQL. Este enfoque ayuda a proteger la aplicación contra posibles amenazas de seguridad al interactuar con la base de datos.
+    Manejo de Errores Consistente: Proporciona un manejo consistente de errores a través de la interfaz, permitiendo una gestión más efectiva de situaciones imprevistas en la interacción con la base de datos.
+    Interfaz Orientada a Objetos y Procedimental: Ofrece tanto una interfaz orientada a objetos como una interfaz procedimental, permitiendo a los desarrolladores elegir el estilo de programación que mejor se adapte a sus preferencias y necesidades.
+    Soporte para Transacciones: Facilita la gestión de operaciones que deben ejecutarse como una unidad atómica. Esto es esencial para garantizar la consistencia de la base de datos en operaciones complejas
+    Preparación de Consultas: El uso de sentencias preparadas en PDO mejora el rendimiento al permitir la reutilización de consultas compiladas, reduciendo la necesidad de analizar y compilar la consulta cada vez que se ejecuta.

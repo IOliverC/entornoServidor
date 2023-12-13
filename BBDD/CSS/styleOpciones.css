@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    min-height: 100vh;
+    background: url(../IMAGES/527526.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+h2 {
+    margin-top: 5% !important;
+    font-size: 80px !important;
+    text-align: center!important;
+    justify-content: center!important;
+    color: #85a258 !important;
+    text-align: center!important;
+}
+
+
+h3 {
+    margin-left: 0rem;
+    padding-top: 20%;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+a:hover{
+    color: #85a258;
+}
+
+.ruta{
+    margin-top: -5%;
+    margin-left: 14%;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+p {
+    margin-top:-40px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.bo {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.bo a {
+    display: inline-block;
+    background: #85a258;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+
+.bo a:hover {
+    background: #6b8246;
+    color: white;
+}
+
+table {
+    background-color: white;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+tr:hover {
+    background-color: #8f8f8f; 
+    color: rgb(255, 255, 255);
+}
+
+th{
+    background-color: #85a258;
+    color: black;
+}
+.icono{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: #85a258;
+    font-size: 32px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px ;
+    z-index: 1;
+}
+.icono:hover{
+    color: white !important;
+    background-color: #6b8246;
+}
