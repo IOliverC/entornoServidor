@@ -2,18 +2,17 @@
 session_start();
 include 'conexion.php';
 
-// Verificar si el usuario está autenticado y tiene el rol de administrador
+// Verificar si el usuario está autenticado y tiene el rol de admin
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true || $_SESSION["role"] !== "admin") {
     header("Location: index.html");
     exit();
 }
 
-// Inicializar variables
 $nombre_actual = "";
 $descripcion_actual = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Obtener el ID del personaje a modificar desde el formulario
+    // Obtener el ID del personaje
     $id = $_POST["id"];
 
     // Consultar los datos actuales con prepared statement
@@ -48,7 +47,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt_update->close();
     } else {
         echo "No se encontró el personaje con el ID proporcionado.";
-        // Puedes redirigir a otra página o manejarlo de acuerdo a tus necesidades
         exit();
     }
 
@@ -69,14 +67,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="form-box login">
             <h2>Modificar Personaje</h2>
 
-            <!-- Formulario de modificación de personajes -->
             <form method="post" action="">
-                <!-- Campo para el ID del personaje a modificar -->
                 <div class="input-box">
                     <input type="number" name="id" required>
                     <label for="id">ID del Personaje a Modificar:</label>
                 </div>
-                <!-- Campos para modificar nombre y descripción -->
                 <div class="input-box">
                     <input type="text" name="nombre" value="<?php echo $nombre_actual; ?>" required>
                     <label for="nombre">Nombre:</label>
@@ -85,10 +80,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <input type="text" name="descripcion" value="<?php echo $descripcion_actual; ?>" required>
                     <label for="descripcion">Descripción:</label>
                 </div>
-                <!-- Botón para enviar el formulario -->
                 <button type="submit" class="btn">Modificar</button>
             </form>
-            <!-- Volver al Dashboard -->
             <div class="bo">
                 <a href="dashboard.php" class="boton1">Volver al Dashboard</a>
             </div>

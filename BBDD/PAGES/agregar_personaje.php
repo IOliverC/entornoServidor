@@ -13,8 +13,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre = $_POST["nombre"];
     $descripcion = $_POST["descripcion"];
 
-    // Validación y sanitización de datos (agrega según tus necesidades)
-
     // Inserción en la base de datos con prepared statement
     $sql = "INSERT INTO personajes (nombre, descripcion) VALUES (?, ?)";
     $stmt = $conn->prepare($sql);

@@ -2,17 +2,16 @@
 session_start();
 include 'conexion.php';
 
-// Verificar si el usuario está autenticado y tiene el rol de administrador
+// Verificar si el usuario está autenticado y tiene el rol de admin
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true || $_SESSION["role"] !== "admin") {
     header("Location: index.html");
     exit();
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Recibir el ID del personaje a eliminar
+    // Recibe el ID del personaje a eliminar
     $personaje_id = $_POST["personaje_id"];
 
-    // Validación y sanitización de datos (agrega según tus necesidades)
 
     // Eliminación en la base de datos con prepared statement
     $sql = "DELETE FROM personajes WHERE id = ?";
